@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class Operation {
+public class OperationDto {
     Long id;
     Date date;
     Long walletId;
