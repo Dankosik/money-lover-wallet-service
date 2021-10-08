@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5431/money-lover-wallet
+    username: postgres
+    password: root
+  application:
+    name: money-lover-wallet-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 8083
