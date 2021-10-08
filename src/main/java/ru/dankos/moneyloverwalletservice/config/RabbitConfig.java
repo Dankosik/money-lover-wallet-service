@@ -15,6 +15,7 @@ public class RabbitConfig {
 
     @Value("${spring.rabbitmq.port}")
     private Integer rabbitMQPort;
+
     @Bean
     public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(ConnectionFactory connectionFactory) {
         SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
