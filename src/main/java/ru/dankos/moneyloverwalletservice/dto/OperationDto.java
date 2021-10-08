@@ -2,14 +2,14 @@ package ru.dankos.moneyloverwalletservice.dto;
 
 import lombok.Data;
 
-import java.util.Date;
+import java.io.Serializable;
 
 @Data
-public class OperationDto {
+public class OperationDto implements Serializable {
     Long id;
-    Date date;
+    String date;
     Long walletId;
-    Long categoryId;
+    CategoryDto category;
     Long operationSum;
     String note;
 }
